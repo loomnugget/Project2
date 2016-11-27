@@ -1,14 +1,5 @@
-/* COLORS *?
-dark brown - #2F2424
-darker brown - #1c1515 #201919
-off white - #eae9e9 #f7f7f7
-#E7E7E7
-#cfcfcf
-
-*/
-
- html, body {
-     background-color: #F2F2F2;
+html, body {
+    background-color: #F2F2F2;
     font-family: 'Lato', sans-serif;
     letter-spacing: .5px;
     color: #303030;
@@ -43,7 +34,7 @@ off white - #eae9e9 #f7f7f7
     box-sizing: border-box;
 }
 
-/*-------- HEADINGS ----------*/
+/*-------- GENERAL HEADINGS ----------*/
 h1,
 h2,
 h3 {
@@ -76,8 +67,6 @@ h4 {
 /*--------------------------------------*/
 /*------------ HEADER ------------------*/
 /*--------------------------------------*/
-
-
 header {
 	padding-top: 0px;
     text-align: center;
@@ -85,11 +74,11 @@ header {
     background-image: linear-gradient(
       rgba(0,0,0, .5),
       rgba(0, 0, 0, .3)
-    ), url(img/flowers.jpg);
+    ), url(/img/grass5.jpg);
     background-position: center;
     background-size: cover;
     height: 100vh;
-   	
+
 }
 
 .intro-box {
@@ -103,21 +92,19 @@ header {
 }
 
 .intro-box h1 {
-     color: #fff;
-    font-size: 350%;
-    letter-spacing: 2px;
+    color: #fff;
+    font-size: 450%;
+    letter-spacing: 3px;
 }
 
 .small-intro-box {
     position: absolute;
     width: 570px;
-    top: 70%;
+    top: 65%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  
 }
-
 
 .small-intro-box h2 {
     padding: 1%;
@@ -137,11 +124,11 @@ header h2 {
     width: auto;
     margin: 0px;
     height:80px;
-  
+
 }
 nav {
     height: 60px;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(255,255,255,.2);
 }
 
 .main-nav {
@@ -189,7 +176,7 @@ nav {
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
     color: #555;
-    
+
 }
 
 .sticky .main-nav li a:hover,
@@ -197,7 +184,7 @@ nav {
     border-bottom: 1px solid #000;
 }
 
-/*----------- mobile navbar ------------*/
+/*----------- MOBILE NAVBAR ------------*/
 
 .mobile-nav-icon{
     position:absolute;
@@ -228,7 +215,7 @@ nav {
     font-weight: 300;
 }
 
-/*--------------------- Circle Button ----------------------*/
+/*------------ Circle Button ----------*/
 .btn-circle {
     padding: 0px 10px;
     background-color: transparent;
@@ -249,7 +236,7 @@ nav {
     outline: 0;
     color: #454545;
   }
-/*--------------------- Box Button ----------------------*/
+/*------------- Box Button ------------*/
 .boxbutton {
     text-transform: uppercase;
     padding: 0.67em;
@@ -273,7 +260,7 @@ nav {
     background-color: rgba(255, 153, 0, .7);
   }
 
-/*--------------------- Header Buttons ----------------------*/
+/*------------- Header Buttons --------------*/
 .enterbtn {
     padding: 10px 30px;
     font-size: 120%;
@@ -288,7 +275,7 @@ nav {
     position: relative;
     display: inline-block;
     margin: 30px 20px;
-    
+
 }
 
 .enterbtn:hover,
@@ -304,18 +291,18 @@ nav {
     font-weight: 300;
     text-decoration: none;
     border-radius: 200px;
-    
+
   }
 
-/* --------------------------- ABOUT SECTION ----------------------- */
+/* --------- ABOUT SECTION ----------- */
 #about {
     background-color: #fafafa;
    /* background-image: linear-gradient(
       rgba(234,94,69,.6),
-      rgba(234,94,69, .3)  
+      rgba(234,94,69, .3)
     ), url(flower2.jpg); */
     text-align: center;
-    padding: 2% 10%;
+    padding: 2% 13%;
 }
 
 #about h2 {
@@ -324,11 +311,6 @@ nav {
     padding: 1%;
 }
 
-#about img {
-    max-width:100%;
-    max-height:100%;
-    border-radius: 3px;
-}
 
 #about p {
     font-size: 130%;
@@ -339,25 +321,36 @@ nav {
     background-color: #fff;
     border-radius: 3px;
 }
-/* --------------------------- SERVICES SECTION ----------------------- */
-
-
+/* ----------- SERVICES SECTION ------------ */
 #services {
-     background-color: #131313;
+    background-image: linear-gradient(
+      rgba(0,0,0, .5),
+      rgba(0, 0, 0, .8)
+    ), url(/img/grass7.jpg);
      padding: 50px;
      word-spacing: 1px;
 }
 
 .textbox {
-    background-color: #2a2a2a;
-    padding: 3%;
+    font-family: 'thin';
+    padding: 1%;
+    margin: 0 10%;
     list-style: none;
     border-radius: 3px;
-    
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 200%;
+}
+
+#services .servicetitle {
+    color: #fff;
+    font-size: 180%;
+
 }
 
 /* background image titles  */
-
 .services-photo {
     width: 100%; /*has the width of the parent element*/
     height: 120px;
@@ -365,11 +358,10 @@ nav {
     margin-bottom: 5%;
     position: relative;
     overflow: hidden;
-    
 }
 
-.absolute-text { 
-    position: absolute; 
+.absolute-text {
+    position: absolute;
     text-align: center;
     width:100%;
     height: 50%;
@@ -378,22 +370,20 @@ nav {
     bottom: 0;
     right: 0;
     z-index: 51;
-    color: #131313;
      font-size: 200%;
     font-family: "lato", sans-serif;
-    
 }
 
 .services-photo img {
     border-radius: 3px;
     width: 100%; /*width of parent element */
     height: auto;
-    opacity: 1; 
+    opacity: 1;
     z-index: -1;
 }
 
-.mask { 
-  position: absolute; 
+.mask {
+  position: absolute;
   text-align: center;
   width: 100%;
   border-radius: 3px;
@@ -405,18 +395,17 @@ nav {
   right: 0;
   z-index: 10;
    background-color: rgba(255,255,255,.4);
-
-
 }
 
-/* Other Services styles */
 
+/* Other Services styles */
 #services h2, h3, p {
-    color: #a0a0a0;
+    color: #fff;
 }
 
 #services p{
-    font-size: 150%;
+    font-size: 130%;
+    font-family: 'thin';
 }
 #services ul {
     margin:0;
@@ -425,7 +414,12 @@ nav {
 #services h2 {
     margin: 2%;
     text-align: center;
-    font-size: 260%;
+    font-size: 200%;
+}
+
+#services hr {
+    width: 70%;
+    margin: 2% 15%;
 }
 
 #services h3 {
@@ -440,9 +434,11 @@ nav {
 }
 
 #services li {
-    color: #a0a0a0;
+    color: #f2f2f2;
     margin-left: 3%;
     font-size: 120%;
+    font-family: 'lato', 'serif';
+    letter-spacing: 1px;
 }
 #section1 {
     background-color:#424242;
@@ -457,35 +453,22 @@ nav {
 
 #display {
     background-color: #2a2a2a;
-     color: #a0a0a0;
+    color: #a0a0a0;
     padding: 3% 5%;
     margin-top: 2%;
 }
 
-/*MAP */
-#showmap {
-    height: 300px;
-}
-
- #map {
-        height: 100%;
-      }
-#firstHeading{
-    color: #131313;
-}
-/* --------------------------- Contact ----------------------- */
+/* ------------- Contact Section --------------- */
 #contact {
-   padding: 0 2%;
+    padding: 0 2%;
     background-image: linear-gradient(
       rgba(0,0,0,.5),
       rgba(0,0,0, .9)
-    ), url(img/maple-min.jpg);
+    ), url(/img/maple-min.jpg);
     background-position: center;
     background-size: cover;
     min-height: 70vh;
-    
 }
-
 
 #contact h2 {
     color: #fff;
@@ -493,12 +476,10 @@ nav {
     font-size: 210%;
     text-shadow: 3px 2px 8px rgba(0, 0, 0, 1);
     padding: 3%;
-  
 }
 
 #contact h2 span {
-   font-family: "lato", sans-serif;
-    
+    font-family: "lato", sans-serif;
 }
 
 .emailbtn {
@@ -519,9 +500,9 @@ nav {
     background-color: transparent;
 }
 
-/* ----------------------------------------------- */
-/* FORM */
-/* ----------------------------------------------- */
+
+/* ------ FORM ------ */
+
 .info {
     vertical-align: middle;
     margin: auto;
@@ -533,7 +514,8 @@ nav {
     background-color: rgba,255,255,.4);
     padding: 1% 3%;
 }
-input[type=text], 
+
+input[type=text],
 input[type=email],
 select,
 textarea {
@@ -550,12 +532,11 @@ textarea {
 
 *:focus {outline: none;}
 
-    
 #form h1, h3 {
     color: #131313;
     margin: 3%;
     text-align: center;
-    }
+}
 
 /* Form messages */
 .messages {
@@ -564,16 +545,16 @@ textarea {
     border-radius: 3px;
     margin-bottom: 20px;
     color: #fff;
-    }
-    
+}
+
 .success {
     background-color: rgba(50,205,50, 1);
-    }
-    
+}
+
 .error {
     background-color: rgba(255,0,0, 1);
 }
- 
+
 /* Submit Button */
 #submit {
     font-family: "thin", sans-serif;
@@ -588,11 +569,12 @@ textarea {
     -webkit-transition: background-color .3s ease-in-out;
     transition: background-color .3s ease-in-out;
 }
+
 #submit:hover {
     background-color: rgba(255,255,255,.9);
 }
-   
-/* --------------------------- FOOTER ----------------------- */
+
+/* --------------- FOOTER ------------------ */
 footer {
     background-color: #131313;
     color: #454545;
@@ -601,7 +583,6 @@ footer {
 
 footer p {
     text-align: center;
-
 }
 
 .footer-nav, .footer-nav2 {
@@ -609,7 +590,6 @@ footer p {
     float:left;
     padding:0;
     margin-left: 5px;
-    
 }
 
 .social-links {
@@ -624,10 +604,8 @@ footer p {
     margin-right: 20px;
 }
 
-
-
 .footer-nav li a:link,
-.footer-nav li a:visited, 
+.footer-nav li a:visited,
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
@@ -647,11 +625,7 @@ footer p {
     color: #eae9e9;
 }
 
-
-/* ----------------------------------------------- */
 /* Animations */
-/* ----------------------------------------------- */
-
 /*before animation starts, content is not visible */
 .js--wp-1,
 .js--wp-2,
@@ -668,8 +642,3 @@ footer p {
 .js--wp-3.animated {
     opacity: 1;
 }
-
-
-
-
-
